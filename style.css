@@ -10,7 +10,11 @@ body {
     font-family: "Poppins", sans-serif;
     padding: 0;
 }
-
+.logo{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navbar {
     display: flex;
     align-items: center;
