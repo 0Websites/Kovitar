@@ -364,3 +364,12 @@ svg{
     opacity: 1;
     visibility: visible;
   }
+
+#hamburger{
+    display: none;
+}
+@media screen and (max-width: 600px){
+#hamburger{
+    display: block;
+}
+}
