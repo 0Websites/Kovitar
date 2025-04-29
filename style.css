@@ -94,8 +94,8 @@ body {
 }
 
 .about p {
-    font-size: 28px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: auto;
 }
 
 .vison {
@@ -386,5 +386,42 @@ svg {
 @media screen and (max-width: 600px) {
     #hamburger {
         display: block;
+    }
+}
+
+.product-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-details p{
+    font-size: 14px;
+}
+.sub-product{
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    background: #DBFFFF;
+    margin: 20px;
+    color: #004C4C;
+    border-radius: 60% 40% 61% 39% / 50% 65% 35% 50%;
+    transition: all .5s ;
+    cursor: pointer;
+}
+.sub-product:hover{
+    box-shadow: 0 0 30px #ffffff2b;
+    transform: rotate(3deg);
+}
+.sub-product p{
+    line-height: auto;
+}
+
+@media screen and (max-width: 700px){
+    .sub-product{
+        width: 100%;
     }
 }
