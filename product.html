@@ -6,22 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Food Products</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <style>
     body {
       background-color: #DBFFFF;
@@ -72,6 +56,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.2s;
+      margin: 15px;
     }
 
     .card:hover {
@@ -133,7 +118,7 @@
   <div class="overlay" id="overlay"></div>
   <script src="ham-menu.js"></script>
 
-  <h1>Snacks</h1>
+  <h1 id="title">Products</h1>
 
   <div class="filters">
     <button class="filter-btn active" data-filter="all">All</button>
@@ -197,7 +182,7 @@
     </div>
     <div class="card show" data-category="others">
       <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTxzbhCZaG4W1ORxrz97Ub2mS8wcHRqH5_kLaL9v25LJVlAVgdljI9COv8LHvtUE36NuTaARa7UPsUYqwyEcZ2nbgdcviVv_hvpt8LjzVX1CtmSGyXwFabLsRLeN5vLfb8qpELA6g_4SZVUeQ-pQVb-6ninjuzwvGYs-Cfaat1sFCzB5ewSmCNy2Aq68/s320/Veggie%20sticks.jpeg"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwFCeiwTxydRXdv81klZ85mx7I0dp9paraze_9wUfBtcFV6eYK1PzgcmIfRqk3vfQagXpXfaFuoHeja5lwzFEiov8b8jtNe9fJ2OR7TbiD9qBlAw8aj59PW04ebTsMh5buGBwcwnTrSTvIsuSml1_UzOg9eA0cdz1tfQiVpWVE4XDpTYZBC9u-d1qy-v0/s16000/Screenshot%202025-04-29%20160714.png"
         alt="Veggie Stix">
       <div class="item-name">Veggie Stix</div>
     </div>
@@ -211,7 +196,7 @@
     </div>
     <div class="card show" data-category="patty">
       <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyCcw4uGp7JlF8_WP57hXatkl3OXhNRyZEKsfg5YmokbsBIMTX44UYobV82w2YI8OBzUITOodIrRWIo6ywjdacYqRI1NH28fBw2uyPSeiD6W3k7mGgbor9Pq-j4Q6afosYdzHCi1f5ZB1YyAT5hH5QEqPgoRBUNX-b9nX7rjEORJAd5P7bYLUa9nmjZMk/s320/a-photograph-of-a-juicy-veggie-burger-pa_9IRx5FEDSIuGnUSMhXmqPg_u0jZ6DhQRXWr-USjyV7DQw.jpeg"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg447G7K7MnhQtUPDrRHoSYJUX7zFYkunIaUUgtjdjHzoPdi7HccKdB8cqGkQ81QxOwQnjBzu63pdxjzz5Tu5bo6HKB3yaRKKWv1KqjSW7QLzjpg_WqwmSCxZEQQuKlHVc-X7e9jctZpArbw2IWlm3vqxTImrNa6u1CyvmkbPMXMIknjANvOcQ8AO1I2FA/s320/Screenshot%202025-04-29%20161001.png"
         alt="Veg Burger Patty">
       <div class="item-name">Veg Burger Patty</div>
     </div>
@@ -229,7 +214,7 @@
     </div>
     <div class="card show" data-category="patty">
       <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiux2PrWeNkpyrL1kdvxe115d91iSYSndcdWKl63XRgujiXL-NU3MDRqLkdGcwcZb9ftnyq5tZPLjz_L18HQRfT4EbKzAvaWGpIQI_RdghGWVeFgnlKEwpGSU-lJBK4-TB8sVs_oAXPlDSQRqfi-BmT3Oj3SL_F3jJDpBBbPKhOW8Tnoz_TlK7G9yTxqvU/s320/a-photograph-of-a-plate-of-golden-brown-_T3_ciW6tQbKMmpZm8HIZmA_kROfa0FsQi6mbcLpRj4g3A.jpeg"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV3YJ4LQWyKh43T8VELmpZn4dNfjeFVT103B6qCmUncm3zB2WTNWR-7xWDCnOJmD0ZU88qMj-5pcZJFWUIPYFLJsaGvLqJwRbT2_xn5Whw-WfF2zEwXSILYXrKlyAuLY33FGtpWrNXQkzlEvmg7eFYU5qTdSH_0r4aB-8jUV9Wyh_3U4AsdTQgUBuNkCs/s1600/Screenshot%202025-04-29%20161541.png"
         alt="Mumbai Aloo Vada">
       <div class="item-name">Mumbai Aloo Vada</div>
     </div>
@@ -269,7 +254,7 @@
     </div>
     <div class="card show" data-category="samosa">
       <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhw9gWGgDs1upaX95SUp54vFTxk0iksgJmf8C2UfnrSQdjrcmo20mCEvEU4w5pbrLOxpU0MqHeSTyphDZ4LzgqZ4BLqgPbdytYuy_Ci6H9a9ipuFNzhNP_75Z77M2AQLKNgxodM3TyVAmB_P7wcPPUXcGABz9R9opgpUpBpN5VA086gEAFTEQCEy1FJ2I/s320/Irani%20patti%20samosa.jpeg"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuqlA_vvVkz-j6QvTeo2G6EX3ZxVSSh-O1CZ3ONNk-rCTcthNb1YacTDazqJl4b_7WlWdsCyUaV7y8RHgTZOEW4bfEHuI2imClNBlYJ2EuJZcgyM5k_JpJMiV3_Cem84oLcTwfX4oryTPH2UtfEjhuosW0vEWeq-PuA4UVmSzD9imtULxqRvg9nNUNrqk/s320/Screenshot%202025-04-29%20161800.png"
         alt="Irani Patti Samosa">
       <div class="item-name">Irani Patti Samosa</div>
     </div>
@@ -281,7 +266,87 @@
     </div>
   </div>
 
+  <h5 id="title">Featured</h5>
 
+  <div class="container">
+    <!-- Fries -->
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEhJnqqI0t2oSZzaOcxZD0up5qAxNwAPjSyGUZzXFOP1WmK72jljPTKSQVObK__w-L6j8ds9tsxxnDHzDRQPDG30YhBUrW20ilj10qPMWxHi_r4SPco_0rIMSqkCV0sVKgh8HedTj70af7b7xn8UMNYikUTTd8_x8VNJc9jgmXQ-f-JpHqdxzR7kT2vUpAY">
+      <div class="item-name">Ferrero moment</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEjaeSdSL6by1AecBrEWqsphbgnpMsnQ1_qGNk-9hlm6HnaDMBZwhwdqIpP_bMiG5MNMkeiw0EkzS4RtBuMFhQVaYtSDg0ADJxCc7WkC2tENSwJbge4nMg2C80lnqurTT-vU9Zqlu040c0l-lzNJuUzYWuBgMeRdpPmsd9MVt1qyC3vyo4Z-b-f4JQGG0Do">
+      <div class="item-name">Kinder joy</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEgxHV14xDyfA1u-a3djiOE3xYhlXmkTQ-30Z2xiH2lvQHEwObPaPLc4Xrzj3jK1MTGEDL00SXfyrtYNqTLzld8Ix8wb6DA_L6u8-htMFWaOTCNX5_ijYZDtacRIFsWiKF_9FNeKXl5pK-p1qYpx8_Y5XmckC2FupAx_u3XPOmEi5plRgb-tvgW3VTTte0Q">
+      <div class="item-name">Shocko bons</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEjCjQQe-AFisbGDwViRXI8-VdY8WIItxdiUFsNzXANv2HYaBX4klEt8uuZfCqUVpzKSLvsOKzRks6GRWk6uASG70Njl0jDM4QwMo3GMDjezcB-bIQvNn2h9UB75DMevcbh3zIuZ8Ikg8D18Ay6a8CKBooTzqMRz-bG2P3jVsG3rPE9JWdKlcWQhab3ddqo">
+      <div class="item-name">Kinder creamy</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEh7SBT-Bv3Kc-aRMRVpqp636j_GQGA5-t-ZCg9I_QBewOOScpvH6k5Tic_GkdxboEEwWjTmNYwLeU2Q2W705UqD0NAopHi8SCOkDm4S9brbhK522XNPn4QvPXGL4SUFYzV6OoE8yetZIGTW3qOUn6u713XYZuZScr60weaKLfNPqKTSypiuW8oc4puXtl0">
+      <div class="item-name">Cadbury silk</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEgvkdq90XrOQ2tYPWdWQ3Nr5p2VQd857_yNWqlUyJET0EWuPjtUGw0sOvpmHCKuHQTh-5j4a3RcX5QIwrYhwCKRX9oQ_HUG4Vw3tObL0dKlCEPWKkj3je97XCFTFdUrB1CEYylE74W9a02x6wSSVmAM_oHM9UFRsmlZKdVpt-YcMMkw-qBcLGWrjQH8-zk">
+      <div class="item-name">Snickers hazelnut</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEjTnC_Auu_TmkwYBDTI-3U-BLwuREB8mxoRwGSwlhWF4M75lwoA-s-YxntLBfl5wriKg1j-oRPeyur0_dGArEVqa4J9LQ1-JvgZAww4a-VD_vBUx6-VYSTIvCyA-ZNJCr7r4otbHzsVQRkDng3tKlZr1MLKvUFYkb4DAk_CgNQhYyFgLtHgKCeE6uHy3Ys">
+      <div class="item-name">Snickers barry</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEj7AGKFglUahWxJRof0-dvlYT7mpEegLfep4SEwMLeM-GOVAypyHtSVcvmnc5FHPZENvrknVoWKBJjOedQP-HSgoA5bNl8lpTMYhCeceFGecm-YzfAu7-6rbc6_zPR5Bnpm33nL93UtwrgWlMlI_CRM8y2uFUO7EoXTMy1d82PuCx0vI0g_gaq5kxLC1xQ">
+      <div class="item-name">Snickers kesar pista</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEhZXmfNseb6J9SFPiiui0XjZfhzKSDBiRhl_P6Wh2x3qHjz439F7jG2wxZEzVgPKcpXwVkPecT3qbYkzK3zmn23tpWqogPOdU5tB77ZlKxNSFYwiDKJsVx2YWuExBu-YEt8ESsh0lkBxYUwOnqiYl1OZbcvfLJP1zPjEAZxp_5JS4tQmE1EPAonCCDUu84">
+      <div class="item-name">Nestle KitKat in variant size
+      </div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEiMZTKCmC3O0gjxE0I0nO7GuIFwkrOWtXVe_bkDnmdbr6NiVZC9PD51K1klrZTPgN0L5FyxGohJ7O2-xEOtOwn0t6vq13ZmcrF3e-yDkBLTI1LU7XDDlJN6PCJJNXKYHeCISLo8GGKs_Q4N8sRzQtFH8CCr3HeGPezELsIfKXb9igFt8i5ZxNb9zGVMqRQ">
+      <div class="item-name">Pringles</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEgG9PNLnu0OQopfg8lecs4t3o7OfjExfrJWQ6jtTRkdi-8OkzG3fMsBtuL_-OBqiMRE4RZnlL1xdJ2ntYZwh0gtPyOLwwnecCd8-Tcr5UjMl-wa5Cy3zwpptN6VBiEdVx6joHtjxbm4Qao9Xw3hDFH6a6CwuSfLeJXJlWJtqhhE9ZrcxeR5dnJdKMd1Et0">
+      <div class="item-name">Lays</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEja6X54Z5pLPCy5AuMKlOt2p-8y4gqELvDe5YSqCT5Rr-Ao8K1kQ5aXloef5M84ATU6nMwgeWAGyLuSUbXjv2FUKzMFjkWhNJ64fPKIqNtWdWSutj4MDBI6C6DIMdAKyF4QmBvfdiPZcKyuxphH2mi6Y0p66qP15pSjcOP4ktvvk9xfp5wuIWhG2Audqdk">
+      <div class="item-name">Harsheys spreads</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEjN2VgMfTdAPn_XIG6bQO9d8YXkkwpZz_YGHW9Y55BdCo5d9k3ahZfbKqkiafkPXOqdG6DvUv5fNWI_F5tjnASrIRLL_NNMTZTXkILST-VlL5eiXxgtQyOGKXLQeYxz3QeuS06k55EVPTFnhjAYmcA2w6swGj1u07mC0weLF3SH_-yptDhsH0PPAGriocc">
+      <div class="item-name">Harsheys kisses</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEiXDT1CPZpWtc7UWAk7vSVa7ersbTicBdIko0oMwynyA773qVEQgJ16hVs37OJGBiPaIpyfm6ZbAKxbHQx1GAuVJBm2yA2-mAeoQYyix7CYEPOXc-ijB4qDbGhcaiLyroxF97XgASIR6LGfMxLIQzlEoWa1sQAsAOeXdwqkYZLxMf3Ad1E95KeILb-EhOM">
+      <div class="item-name">Cadbury 5 star</div>
+    </div>
+    <div class="card show" data-category="fries">
+      <img
+        src="https://blogger.googleusercontent.com/img/a/AVvXsEi0Xqz6AKCbdRGvrnzWDBgv2hjONJDxFjL_AXU__01WLHHQ5QbVSh64IteLVuxUhgEyt95aFd0Gz7SWF-Sxu2ij6u8s73xs543g3bUXoKjwREFciZNXXRJ5ppIJhXNRxnxxdbP5dLrc2GrD5rElF2j7fe7BCtdC682cfL5-CzHr12yIFfZSe21Qjk8yyd0">
+      <div class="item-name">Orbits</div>
+    </div>
+  </div>
 
   <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
     class="transition duration-300 ease-in-out delay-150">
