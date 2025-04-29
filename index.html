@@ -333,5 +333,31 @@
         <span>Copyright by Kavitar Frozen Foods | Developed by Vedansh Derashri</span>
     </footer>
 </body>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    const duration = 5000; // Duration of confetti in ms
+    const interval = 250; // Interval between bursts
 
+    const end = Date.now() + duration;
+
+    const confettiInterval = setInterval(() => {
+      // Launch confetti in random directions
+      confetti({
+        particleCount: 50,
+        startVelocity: 30,
+        spread: 360,
+        origin: {
+          x: Math.random(),
+          y: Math.random() * 0.5
+        }
+      });
+
+      
+      if (Date.now() > end) {
+        clearInterval(confettiInterval);
+      }
+    }, interval);
+  });
+</script>
 </html>
