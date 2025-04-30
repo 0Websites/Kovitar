@@ -9,14 +9,15 @@
 </head>
 
 <body>
+    <div class="contact-top">
+        <a href="">Email :kovitarfoodsint@gmail.com</a>
+    </div>
     <div class="navbar">
         <img id="hamburger" width="30px"
             src="https://static-00.iconduck.com/assets.00/line-horizontal-3-decrease-circle-fill-icon-2048x2048-33ka5zyh.png"
             alt="">
         <div class="logo">
-            <img width="40px"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij_1u6rR1bph0t7vXHvmk9WtCJdm7nIvhFf4cxQjXQXYWx3tmg01rkq5Uk_cnsNtV1h5UKJdLU6RWETSZCBxO9jYhyphenhyphenCQ6IyRBPfhDI1pJrAGb1T_90Wjv5Ai0inUaJoFnPJ6gCs1_64LN5SC8oGyZam4MCbtRbrSzLREqZXufvv4fB47bh56QDbhw08vs/s16000/White.png">
-            <h1>Kovitar</h1>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij_1u6rR1bph0t7vXHvmk9WtCJdm7nIvhFf4cxQjXQXYWx3tmg01rkq5Uk_cnsNtV1h5UKJdLU6RWETSZCBxO9jYhyphenhyphenCQ6IyRBPfhDI1pJrAGb1T_90Wjv5Ai0inUaJoFnPJ6gCs1_64LN5SC8oGyZam4MCbtRbrSzLREqZXufvv4fB47bh56QDbhw08vs/s16000/White.png">
         </div>
         <div class="links">
             <a href="index.html">HOME</a>
@@ -24,6 +25,7 @@
             <a href="index.html#contact">CONTACT</a>
             <a href="enquiry.html">ENQUIRY</a>
             <a href="product.html">PRODUCTS</a>
+            <a href="featured.html">FEATURED</a>
         </div>
     </div>
     <div class="sidebar" id="sidebar">
@@ -32,6 +34,7 @@
         <a href="index.html#contact">CONTACT</a>
         <a href="enquiry.html">ENQUIRY</a>
         <a href="product.html">PRODUCTS</a>
+        <a href="featured.html">FEATURED</a>
     </div>
     <div class="overlay" id="overlay"></div>
     <script src="ham-menu.js"></script>
@@ -240,7 +243,7 @@
             <li><span>Ethical Supply Chains :</span> Commitment to sustainable and transparent practices.</li>
         </div>
     </div>
-    <h1 style="color:#004C4C;" id="title">Our Core Values</h1>
+    <h1 style="color:#004C4C;margin: 0!important;" id="title">Our Core Values</h1>
     <div class="partner">
         <div class="why">
             <li><span>Integrity : </span>Fair trade and transparent partnerships globally.</li>
@@ -256,10 +259,10 @@
     <div id="contact"></div>
     <h1 style="color:#004C4C;" id="title">Contact Us</h1>
     <div class="contact">
-        <button id="btn">Call Now</button>
-        <button id="btn">Message</button>
+        <a href="tel:+919274165669"><button id="btn">Call Now</button></a>
+        <a href="https://wa.link/eft1dk"><button id="btn">Message</button></a>
     </div>
-
+ 
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
         class="transition duration-300 ease-in-out delay-150">
         <style>
@@ -329,35 +332,18 @@
             stroke="none" stroke-width="0" fill="#004c4c" fill-opacity="1"
             class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
     </svg>
+    
+    <div class="contact-top">
+        <a href="">Email : kovitarfoodsint@gmail.com</a>
+    </div>
+
     <footer>
-        <span>Copyright by Kavitar Frozen Foods | Developed by Vedansh Derashri</span>
+        <span style="font-size: 14px;">Copyright by Kovitar Foods International | <a href="#" style="color: #ffffff51; font-weight: 200;text-decoration: none;">Developed by Vedansh Derashri</a></span>
     </footer>
-</body>
- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script>
-  window.addEventListener('load', () => {
-    const duration = 5000; // Duration of confetti in ms
-    const interval = 250; // Interval between bursts
 
-    const end = Date.now() + duration;
-
-    const confettiInterval = setInterval(() => {
-      // Launch confetti in random directions
-      confetti({
-        particleCount: 50,
-        startVelocity: 30,
-        spread: 360,
-        origin: {
-          x: Math.random(),
-          y: Math.random() * 0.5
-        }
-      });
+   
 
       
-      if (Date.now() > end) {
-        clearInterval(confettiInterval);
-      }
-    }, interval);
-  });
-</script>
+</body>
+
 </html>
