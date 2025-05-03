@@ -413,10 +413,7 @@ svg {
     transition: all .5s ;
     cursor: pointer;
 }
-.sub-product:hover{
-    box-shadow: 0 0 30px #ffffff2b;
-    transform: rotate(3deg);
-}
+
 .sub-product p{
     line-height: auto;
 }
