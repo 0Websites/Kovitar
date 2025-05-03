@@ -406,12 +406,10 @@ svg {
     flex-direction: column;
     display: flex;
     align-items: center;
-    height: 200px;
     padding: 20px;
-    background: #DBFFFF;
+    background: #004C4C;
     margin: 20px;
-    color: #004C4C;
-    border-radius: 60% 40% 61% 39% / 50% 65% 35% 50%;
+    color: #fff;
     transition: all .5s ;
     cursor: pointer;
 }
